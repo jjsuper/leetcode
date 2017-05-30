@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool validWordSquare(vector<string>& words) {\r\n        for(int i=0; i<words.size(); ++i) \r\n            for(int j=0; j<words[i].size(); ++j)\r\n                if(j>=words.size() || i>=words[j].size() || words[i][j]!=words[j][i])\r\n                    return false;\r\n        return true;\r\n    }\r\n};"}

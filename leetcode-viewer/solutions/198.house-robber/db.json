@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int rob(vector<int>& nums) {\r\n        \r\n    int pre = 0 , pre_2 = 0;\r\n    for(int i=0;i<nums.size();i++)\r\n       swap(pre,pre_2=max(pre_2+nums[i],pre));\r\n    return pre;\r\n        \r\n        \r\n    }\r\n};"}

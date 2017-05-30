@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int findComplement(int num) {\r\n        unsigned mask = ~0;\r\n        while(num&mask) mask=mask<<1;\r\n        return ~num&~mask;\r\n    }\r\n};"}

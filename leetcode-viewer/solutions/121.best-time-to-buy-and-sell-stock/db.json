@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int maxProfit(vector<int>& prices) {\r\n        int minprice=INT_MAX;\r\n        int maxprofit=0;\r\n        \r\n        for(auto p : prices) {\r\n            minprice=min(minprice, p);\r\n            maxprofit=max(maxprofit, p-minprice);\r\n        }\r\n        \r\n        return maxprofit;\r\n    }\r\n};"}

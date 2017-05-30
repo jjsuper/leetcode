@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int addDigits(int num) {\r\n        return (num-1)%9+1;\r\n    }\r\n};"}

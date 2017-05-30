@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int hammingDistance(int x, int y) {\r\n        int dis=x^y;\r\n        int cnt=0;\r\n        for(int i=0; i<32; ++i) {\r\n            cnt+= dis & 1? 1: 0;\r\n            dis=dis>>1;\r\n        }\r\n        \r\n        return cnt;\r\n    }\r\n};"}

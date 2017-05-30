@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int trailingZeroes(int n) {\r\n        \r\n    if(n<=0) return 0;\r\n\r\n    int numZero=0;\r\n    while(n>0){\r\n        numZero+=n/5;\r\n        n=n/5;\r\n    }\r\n    return numZero;\r\n        \r\n    }\r\n};"}

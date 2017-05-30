@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int countSegments(string s) {\r\n        s=s + ' ';\r\n        int cnt=0;\r\n        for(int i=1; i<s.size(); ++i) {\r\n            if(s[i]==' ' && s[i-1]!=' ') cnt++;\r\n        }\r\n        return cnt;\r\n    }\r\n};"}

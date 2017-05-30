@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool increasingTriplet(vector<int>& nums) {\r\n        int c1=INT_MAX, c2=INT_MAX;\r\n        \r\n        for(int x:nums)\r\n        {\r\n            if(x<=c1) c1=x;\r\n            else if (x<=c2) c2=x;\r\n            else return true;\r\n        }\r\n        \r\n        return false;\r\n    }\r\n};"}

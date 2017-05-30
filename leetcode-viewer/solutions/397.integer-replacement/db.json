@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int integerReplacement(int n) {\r\n        if(n==INT_MAX) return 32;\r\n        int cnt=0;\r\n        while(n>1) {\r\n            if(n%2==0) n/=2;\r\n            else if(!((n+1)%4) && n!=3) n++;\r\n            else n--;\r\n            cnt++;\r\n        }\r\n        \r\n        return cnt;\r\n    }\r\n};"}

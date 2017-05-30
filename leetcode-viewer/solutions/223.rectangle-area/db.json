@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {\r\n        int l = min(max(A, E), C);\r\n        int r = min(max(A, G), C);\r\n        int t = min(max(B, H), D);\r\n        int b = min(max(B, F), D);\r\n        return (C-A)*(D-B) + (G-E)*(H-F) - (r-l)*(t-b);\r\n        \r\n        \r\n    }\r\n};"}

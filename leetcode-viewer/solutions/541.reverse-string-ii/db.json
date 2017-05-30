@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    string reverseStr(string s, int k) {\r\n        for(int left=0; left<s.size(); left+=2*k) \r\n            for(int i=left, j=min((int)s.size()-1, left+k-1); i<j; i++, j--)\r\n                swap(s[i], s[j]);\r\n        return s;\r\n    }\r\n};"}

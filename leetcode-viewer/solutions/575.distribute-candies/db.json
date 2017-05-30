@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int distributeCandies(vector<int>& candies) {\r\n        unordered_set<int> hash;\r\n        for(auto n : candies) hash.insert(n);\r\n        return hash.size() >= candies.size()/2 ? candies.size()/2: hash.size();\r\n    }\r\n};"}

@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool isPowerOfThree(int n) {\r\n          double logRes = log10(n)/log10(3);\r\n  return (logRes - int(logRes) == 0) ? true : false; \r\n    }\r\n};"}

@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int findMaxConsecutiveOnes(vector<int>& nums) {\r\n        int cnt=0, maxcnt=0;\r\n        \r\n        for(auto it:nums) {\r\n            if(it) cnt++;\r\n            else {\r\n                maxcnt=max(maxcnt,cnt);\r\n                cnt=0;\r\n            }\r\n        }\r\n        \r\n        return max(cnt,maxcnt);\r\n    }\r\n};"}

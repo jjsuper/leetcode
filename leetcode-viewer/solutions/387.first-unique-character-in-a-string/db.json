@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int firstUniqChar(string s) {\r\n        vector<int> count(26,0);\r\n        for(auto c: s) count[c-'a']++;\r\n        for(int i=0; i<s.size(); ++i) {\r\n            if(count[s[i]-'a']==1) return i;\r\n        }\r\n        return -1;\r\n    }\r\n};"}

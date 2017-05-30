@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int lastRemaining(int n) {\r\n        if (n==1) return 1;\r\n        int p = lastRemaining(n/2);\r\n        return (n/2 - p + 1) * 2;\r\n    }\r\n};"}

@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int rangeBitwiseAnd(int m, int n) {\r\n        return (n>m) ? (rangeBitwiseAnd(m/2, n/2) << 1) : m;\r\n    }\r\n};"}

@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int missingNumber(vector<int>& nums) {\r\n        int ret=nums.size();\r\n        for(int i=0;i<nums.size();i++)\r\n        {\r\n            ret^=i;\r\n            ret^=nums[i];\r\n        }\r\n        return ret;\r\n    }\r\n};"}

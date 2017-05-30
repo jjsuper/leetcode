@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int titleToNumber(string s) {\r\n        int num=0;\r\n        \r\n        for(int i=0; i<s.size(); ++i) {\r\n            num = num*26 + s[i]-'A'+1;\r\n        }\r\n        \r\n        return num;\r\n    }\r\n};"}

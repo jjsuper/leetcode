@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int minMoves2(vector<int>& nums) {\r\n        sort(nums.begin(), nums.end());\r\n        int moves=0;\r\n        int mid=nums[nums.size()/2];\r\n        \r\n        for(auto i:nums) {\r\n            moves+=abs(i-mid);\r\n        }\r\n        \r\n        return moves;\r\n    }\r\n};"}

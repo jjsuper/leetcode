@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    char findTheDifference(string s, string t) {\r\n        char ret=0;\r\n        for(int i=0; i<s.size(); ++i)\r\n            ret = ret ^ s[i];\r\n        for(int i=0; i<t.size(); ++i)\r\n            ret = ret ^ t[i];\r\n        return ret;\r\n    }\r\n};"}

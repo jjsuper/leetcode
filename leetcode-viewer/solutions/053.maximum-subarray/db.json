@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int maxSubArray(vector<int>& nums) {\r\n        int res=INT_MIN;\r\n        int sum=0;\r\n        int minsum=0;\r\n        for(auto n : nums) {\r\n            sum+=n;\r\n            res=max(res,sum-minsum);\r\n            minsum=min(minsum, sum);\r\n        }\r\n        return res;\r\n    }\r\n    \r\n};"}

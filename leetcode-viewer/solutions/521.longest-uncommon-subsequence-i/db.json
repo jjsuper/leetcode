@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int findLUSlength(string a, string b) {\r\n        return a == b ? -1 : max(a.size(), b.size());\r\n    }\r\n};"}

@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int arrayPairSum(vector<int>& nums) {\r\n        sort(nums.begin(), nums.end());\r\n        int res=0;\r\n        for(int i=0; i<nums.size(); i+=2) {\r\n            res+=nums[i];\r\n        }\r\n        return res;\r\n    }\r\n};"}

@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int integerBreak(int n) {\r\n        if(n==2) return 1;\r\n        if(n==3) return 2;\r\n        switch (n%3)\r\n        {\r\n           case 0: return pow(3,n/3);\r\n           case 1: return pow(3,n/3-1)*4;\r\n           case 2: return pow(3,n/3)*2;\r\n        }\r\n        return 0;\r\n    }\r\n};"}

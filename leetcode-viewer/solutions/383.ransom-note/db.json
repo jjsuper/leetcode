@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool canConstruct(string ransomNote, string magazine) {\r\n        vector<int> count(26,0);\r\n        for(auto c: ransomNote) count[c-'a']--;\r\n        for(auto c: magazine)   count[c-'a']++;\r\n        for(auto num: count)    if(num<0) return false;\r\n        return true;\r\n    }\r\n};"}

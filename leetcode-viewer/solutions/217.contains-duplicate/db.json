@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool containsDuplicate(vector<int>& nums) {\r\n\r\n    set<int> myset;\r\n//  std::set<int>::iterator it;\r\n    \r\n    for(int i=0;i<nums.size();++i)\r\n    {\r\n        if(myset.find(nums[i])!=myset.end()) return true;\r\n        myset.insert(nums[i]);\r\n        \r\n    }\r\n    \r\n    return 0;\r\n    }\r\n};"}

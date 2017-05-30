@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool isPowerOfTwo(int n) {\r\n        \r\n        if(n<=0) return false;\r\n        return !(n&(n-1));\r\n    }\r\n};"}

@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int singleNumber(int A[], int n) {\r\n     \r\n        int num=0;\r\n        \r\n        for(int i=0; i<n; ++i)\r\n        {\r\n            \r\n            num^=A[i];\r\n            \r\n        }\r\n     \r\n        return num;\r\n    }\r\n};"}

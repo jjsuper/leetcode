@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool isSubsequence(string s, string t) {\r\n        int sindex=0;\r\n        for(int i=0; i<t.size(); ++i) {\r\n            if(s[sindex]==t[i]) sindex++; \r\n        }\r\n        \r\n        return sindex==s.size();\r\n    }\r\n};"}

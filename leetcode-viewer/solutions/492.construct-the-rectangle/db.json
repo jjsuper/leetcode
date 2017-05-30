@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    vector<int> constructRectangle(int area) {\r\n        int w=(int)sqrt(area);\r\n        while(area%w) w--;\r\n        return vector<int>{area/w,w};\r\n    }\r\n};"}

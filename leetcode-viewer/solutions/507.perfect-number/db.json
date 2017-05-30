@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool checkPerfectNumber(int num) {\r\n        if(num==1) return false;\r\n        int sum=1;\r\n        for(int i=2; i<=sqrt(num); ++i) {\r\n            if(num%i==0) {\r\n                sum+=i+num/i;\r\n            }\r\n        }\r\n        return sum==num;\r\n    }\r\n};"}

@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    void reverseWords(string &s) {\r\n        reverse(s.begin(), s.end());\r\n        for(int i=0, j=0; i<s.size(); i=j+1) {\r\n            j=i;\r\n            while(s[j]!=' '&&j<s.size()) ++j;\r\n            reverse(s.begin()+i, s.begin()+j);\r\n        }\r\n    }\r\n};"}

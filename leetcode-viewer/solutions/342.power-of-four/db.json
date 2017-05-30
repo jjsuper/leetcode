@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool isPowerOfFour(int num) {\r\n        if(num<0) return false;\r\n        \r\n        int cmp=1;\r\n        \r\n        for(int i=0;i<16;++i)\r\n        {\r\n            if(!(cmp^num)) return true;\r\n            cmp=cmp<<2;\r\n        }\r\n        \r\n        \r\n        \r\n        return false;\r\n    }\r\n};"}

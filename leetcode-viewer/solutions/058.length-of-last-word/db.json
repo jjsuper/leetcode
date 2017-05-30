@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int lengthOfLastWord(string s) {\r\n        int len = 0, tail = s.length() - 1;\r\n        while (tail >= 0 && s[tail] == ' ') tail--;\r\n        while (tail >= 0 && s[tail] != ' ') {\r\n            len++;\r\n            tail--;\r\n        }\r\n        return len;\r\n    }\r\n};"}

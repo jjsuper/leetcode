@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int magicalString(int n) {\r\n        string S=\"122\";\r\n        int i=2;\r\n        while(S.size()<n)\r\n            S+= string(S[i++]-'0', S.back()^3);\r\n        return count(S.begin(), S.begin()+n, '1');\r\n    }\r\n};"}

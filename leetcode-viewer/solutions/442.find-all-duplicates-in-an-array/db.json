@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    vector<int> findDuplicates(vector<int>& nums) {\r\n        vector<int> ans;\r\n        \r\n        for(auto it: nums) {\r\n            it=abs(it);\r\n            if(nums[it-1]>0) nums[it-1]=-nums[it-1];\r\n            else ans.push_back(it);\r\n        }\r\n        \r\n        return ans;\r\n    }\r\n};"}

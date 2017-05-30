@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int bulbSwitch(int n) {\r\n        int counts = 0;\r\n\r\n    for (int i=1; i*i<=n; ++i) {\r\n        ++ counts;    \r\n    }\r\n\r\n    return counts;\r\n    }\r\n};"}

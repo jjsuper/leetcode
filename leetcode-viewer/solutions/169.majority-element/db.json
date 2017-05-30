@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int majorityElement(vector<int>& nums) {\r\n        sort(nums.begin(),nums.end());\r\n        return nums[nums.size()/2];\r\n    }\r\n};"}

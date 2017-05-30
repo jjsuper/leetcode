@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    void wiggleSort(vector<int>& nums) {\r\n        if(nums.size()<1) return;\r\n        \r\n        for(int i=1; i<nums.size(); ++i) {\r\n            if(i%2==1 && nums[i]<nums[i-1]) swap(nums[i], nums[i-1]);\r\n            if(i%2==0 && nums[i]>nums[i-1]) swap(nums[i], nums[i-1]);\r\n        }\r\n        \r\n        return;\r\n    }\r\n};"}
